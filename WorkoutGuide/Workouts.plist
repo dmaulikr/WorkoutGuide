@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Side Plank</key>
+	<array>
+		<string>sidePlank</string>
+		<string>Lie on one side with legs and feet stacked on top of one another. Lift hips to prop body up on elbow, keeping feet stacked. Press forearm into ground to keep torso and hips in a straight line. Hold. </string>
+	</array>
+	<key>Push-Up With Rotation</key>
+	<array>
+		<string>pushUpWithRotation</string>
+		<string>Start in high plank and lower body then press back up to perform a push-up. From high plank, shift weight to left arm and rotate body to left side. Hold side plank for one count keeping hips high. Return to starting position, perform push-up, and repeat on right side. Continue to alternate. </string>
+	</array>
+	<key>Lunge</key>
+	<array>
+		<string>lunge</string>
+		<string>Stand tall. Take a big step forward with right leg and lower body until right thigh is parallel to floor and right shin is vertical (don&apos;t let knee go past right toe). Press into right heel to drive back up to starting position. Repeat on other side.</string>
+	</array>
+	<key>High Knees</key>
+	<array>
+		<string>highKnees</string>
+		<string>Stand tall with feet hip width. Engage core and use lower abs to lift and lower one knee at a time as if running in place. Bring
+knees to same height as hips, thighs parallel to floor, and try not to lean back. Stay on balls of feet and alternate legs as fast as possible.</string>
+	</array>
+	<key>Plank</key>
+	<array>
+		<string>plank</string>
+		<string>Place hands directly under shoulders. Engage core and squeeze glutes to stabilize body. Keep neck and spine neutral. Head should be in line with back. Hold position.</string>
+	</array>
+	<key>Triceps Dip</key>
+	<array>
+		<string>tricepsDip</string>
+		<string>Sit on edge of chair and place hands on edge just outside of hips. Walk feet out a few steps, slide butt off chair, and straighten arms. Bend elbows and lower body until arms are bent at about 90 degrees. Press down into chair to return to starting position.</string>
+	</array>
+	<key>Squat</key>
+	<array>
+		<string>squat</string>
+		<string>Stand with feet just wider than hip width, hips stacked over knees, knees over ankles. Hinge at hips then send hips back and bend knees to lower body. Keep chest lifted and lower to at least 90 degrees. Rise and repeat. </string>
+	</array>
+	<key>Step-Up</key>
+	<array>
+		<string>stepUp</string>
+		<string>Stand facing chair (or stool) and lift right foot onto seat. Press into heel of right foot to lift your body weight onto chair, balancing on right leg. Slowly lower back down to floor. Switch legs and repeat. Continue to alternate.</string>
+	</array>
+	<key>Crunch</key>
+	<array>
+		<string>crunch</string>
+		<string>Lie faceup on floor with knees bent and arms reaching straight out. Press low back into floor and engage core to lift shoulder blades up off the floor and slightly forward. </string>
+	</array>
+	<key>Push-Up</key>
+	<array>
+		<string>pushUp</string>
+		<string>Start in high plank, wrists under shoulders, core engaged. Lower chest to floor, keeping legs, hips, and back in a straight line. Press into palms to lift back up.</string>
+	</array>
+	<key>Wall Sit</key>
+	<array>
+		<string>wallSit</string>
+		<string>Stand with back to wall. Walk feet away from wall as you slide back down wall, lowering body until hips, knees, and ankles are at 90-degree angles. Engage core to keep low back pressed against wall. </string>
+	</array>
+	<key>Jumping Jack</key>
+	<array>
+		<string>jumpingJack</string>
+		<string>It&apos;s a gym classic—but you&apos;ve gotta move fast! Stand with feet hip-width apart. Jump feet open as you raise arms up to form an X. Jump feet back together as you lower arms to sides. </string>
+	</array>
+</dict>
+</plist>

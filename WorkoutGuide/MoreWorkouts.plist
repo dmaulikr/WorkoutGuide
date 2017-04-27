@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Lying Leg Raises / Lifts</key>
+	<array>
+		<string>lyingLegRaisesLifts</string>
+		<string>Lie on your back on a mat with hands under your lower buttocks on either side to support your pelvis.		Legs straight out in front of you, ankles together and feet slightly off the floor.		Keep your knees straight and raise your legs by flexing the hips until they are completely flexed.		Return to starting position.</string>
+	</array>
+	<key>Kneeling Cable Crunches</key>
+	<array>
+		<string>kneelingCableCrunches</string>
+		<string>Kneel in front of a cable station with a rope attachment connected to the top pulley.		Grip the rope attachment and place your wrists against your forehead.		Flex your hips slightly to take the weight and to hyperextend your lower back.		Keeping your hips stationary, bend at the waist so that your elbows travel down towards the middle of  your thighs. Hold for a count of one.		 Return to the start position in a controlled movement and repeat.</string>
+	</array>
+	<key>Leg Pull-In Knee-ups</key>
+	<array>
+		<string>legPullInKneeUps</string>
+		<string>Lie flat with hands under your buttocks. Keep your knees together and pull them in towards you while moving your torso towards them (lift your head, neck and shoulders up).		Hold and then slowly return to starting position.</string>
+	</array>
+	<key>Bicycles</key>
+	<array>
+		<string>bicycles</string>
+		<string>Lie flat on an exercise mat on the floor keeping your lower back straight with no arching of your spine and with your knees bent and feet flat on the floor.		Place your hands lightly on the sides of your head.		Curl your torso upwards so your shoulders are slightly raised off the floor..		Raise your knees until your thighs are at a right angle to the floor and your calves are parallel to the floor. This is the start position.		Slowly move your legs in a pedaling action as if you are riding a bicycle.		As you do so, exhale and bring your opposing elbow close to each knee by crunching to one side. Left elbow to right knee. Right elbow to left knee.		After each crunch, return to the start position inhaling as you do so.		Without pausing, repeat the movement to the other side.		Repeat without pausing for the desired number of repetitions to each side.</string>
+	</array>
+	<key>Jackknife Sit-up </key>
+	<array>
+		<string>jackknifeSitUp </string>
+		<string>Lie flat on an exercise mat, extending your arms straight back behind your head.		Fully extend your legs also.This is the start position.		Bend at your waist and at the same time, raise your legs and arms to meet in a closed jackknife position. Exhale as you do this.		At this point, your legs should remain fully extended at between 35-45 degrees from the floor.		Your arms should be fully extended, parallel to your legs.		Your upper body should be raised off the floor.		Return to the start position by lowering your arms and legs back to the floor, exhaling as you do so.		Repeat</string>
+	</array>
+	<key>Lying Oblique Reach</key>
+	<array>
+		<string>lyingObliqueReach</string>
+		<string>Lie on an exercise mat, with your back flat, knees bent and your feet flat on the floor slightly wider than shoulder width apart.		Fully exend your arms down the side of your body, palms facing in. This is the start position.		Exhaling, crunch your torso forward and to the right until you can touch your right heel with your right hand. Hold for a count of one.		return to the starting position smooth motion, inhaling as you do so.		Repeat the movement, this time to your left side.		When you have completed the movement on both sides, you have done one repetitition.		Repeat.</string>
+	</array>
+	<key>Ab Crunch Machine</key>
+	<array>
+		<string>abCrunchMachine</string>
+		<string>Sit on the ab machine and select a slight resistance. Position your feet under the pads and grab hold of the top handles.		Make sure your arms are bent at 90 degrees and rest your triceps on the pads.		Begin lifting your legs up as you engage your abs and crunch your upper torso. Exhale as you do so.		Pause and slowly return to starting position as you inhale. Tip: Use slow, controlled motions and concentrate on using your abs to control the weight. Your feet and legs should be relaxed throughout.</string>
+	</array>
+	<key>Kneeling Roll Extensions</key>
+	<array>
+		<string>kneelingRollExtensions</string>
+		<string>Kneel on the floor on all fours and place the ab roller in front of you.		Grab hold of either end of the roller with each hand.		Engage your abs and slowly roll the roller forward in a straight line until your body stretches in a straight position.		Try to roll down as far as you can without touching the floor.		Inhale in as you roll down.		Pull yourself back to the starting position by exhaling and rolling back slowly. Maintain tight abs throughout the movement.</string>
+	</array>
+</dict>
+</plist>
