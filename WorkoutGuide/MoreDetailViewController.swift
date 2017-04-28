@@ -13,8 +13,8 @@ class MoreDetailViewController: UIViewController
 
     //# MARK: - Outlets
     
-    @IBOutlet weak var moreWorkoutLabel: UILabel!
     
+    @IBOutlet weak var moreWorkoutLabel: UILabel!
     
     //# MARK: - Variables
     

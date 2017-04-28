@@ -42,14 +42,24 @@ class SettingsViewController: UIViewController
 
     }
     
-    override func viewWillAppear(_ animated: Bool)
-    {
-        super.viewWillAppear(true)
-        
-        updateBackgroundColor()
-        
-        
-    }
+//    override func viewWillAppear(_ animated: Bool)
+//    {
+//        super.viewWillAppear(true)
+//        
+//        // loads the stored defaults of color chosen
+//        let defaults = UserDefaults.standard
+//        redSlider.value = defaults.float(forKey: "red")
+//        greenSlider.value = defaults.float(forKey: "green")
+//        blueSlider.value = defaults.float(forKey: "blue")
+//        
+//        // updates the color chosen
+//        updateBackgroundColor()
+//        colorSquare.layer.borderColor = UIColor.black.cgColor
+//        colorSquare.layer.borderWidth = 1
+//
+//        
+//        
+//    }
     
     //# MARK: - Actions
     
@@ -69,14 +79,14 @@ class SettingsViewController: UIViewController
         defaults.synchronize()
         print("Set is being pressed")
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // sends the chosen color to the background of the Home ViewController.
-        if (segue.identifier == "home") {
-            let newViewController = segue.destination
-            newViewController.view.backgroundColor = colorSquare.backgroundColor
-        }
-    }
+//    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // sends the chosen color to the background of the Home ViewController.
+//        if (segue.identifier == "home") {
+//            let newViewController = segue.destination
+//            newViewController.view.backgroundColor = colorSquare.backgroundColor
+//        }
+//    }
 
     
     //# TODO: - Add features
