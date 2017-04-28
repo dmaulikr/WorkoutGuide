@@ -19,7 +19,7 @@ class CustomButton: UIButton
         self.setTitleColor(textColor, for: .normal)
         self.titleLabel?.font = appFont
         self.layer.cornerRadius = 5
-        self.layer.borderColor = buttonBorderColor
+        self.layer.borderColor = borderColor
         self.layer.borderWidth = 3
         self.clipsToBounds = true
     }

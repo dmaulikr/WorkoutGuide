@@ -57,6 +57,7 @@ class WorkoutGuideViewController: UIViewController
                         button.layer.borderWidth = 3
                         button.layer.cornerRadius = 5
                         button.clipsToBounds = true
+                        
                         button.addTarget(self, action: #selector(WorkoutGuideViewController.goToDetails(sender:)), for: .touchUpInside)
                     }
                 }
