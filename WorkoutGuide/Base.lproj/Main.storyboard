@@ -341,6 +341,9 @@
                                     <segment title="Green"/>
                                     <segment title="Blue"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentControl:" destination="lAn-QW-P55" eventType="valueChanged" id="OJe-Pa-STl"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text Font" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-GE-8nf">
                                 <rect key="frame" x="147" y="488" width="72" height="21"/>
@@ -361,6 +364,7 @@
                         <outlet property="colorSquare" destination="RLN-xV-d32" id="BlJ-YR-JJz"/>
                         <outlet property="greenSlider" destination="BRz-gM-GG7" id="oao-xs-9hu"/>
                         <outlet property="redSlider" destination="wde-KS-Gmf" id="aUM-uZ-Cdk"/>
+                        <outlet property="segmentedControl" destination="Gqc-42-9Nf" id="I62-il-vW9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fko-xP-kad" userLabel="First Responder" sceneMemberID="firstResponder"/>

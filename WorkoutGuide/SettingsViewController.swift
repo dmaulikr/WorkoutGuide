@@ -18,50 +18,52 @@ class SettingsViewController: UIViewController
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     @IBOutlet weak var colorSquare: UIView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     //# MARK: - Variables
     
-    
+    let defaults = UserDefaults.standard
+
+
+        
     //# MARK: - Functions
+    
+   
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        // loads the stored defaults of color chosen
+        // loads the stored defaults of theme color chosen
         let defaults = UserDefaults.standard
+        
         redSlider.value = defaults.float(forKey: "red")
         greenSlider.value = defaults.float(forKey: "green")
         blueSlider.value = defaults.float(forKey: "blue")
+        
+        // Losds the stored defaults of text color chosen
+      
+        
         
         // updates the color chosen
         updateBackgroundColor()
         colorSquare.layer.borderColor = UIColor.black.cgColor
         colorSquare.layer.borderWidth = 1
-        
-
     }
     
-//    override func viewWillAppear(_ animated: Bool)
-//    {
-//        super.viewWillAppear(true)
-//        
-//        // loads the stored defaults of color chosen
-//        let defaults = UserDefaults.standard
-//        redSlider.value = defaults.float(forKey: "red")
-//        greenSlider.value = defaults.float(forKey: "green")
-//        blueSlider.value = defaults.float(forKey: "blue")
-//        
-//        // updates the color chosen
-//        updateBackgroundColor()
-//        colorSquare.layer.borderColor = UIColor.black.cgColor
-//        colorSquare.layer.borderWidth = 1
-//
-//        
-//        
-//    }
     
     //# MARK: - Actions
+    @IBAction func segmentControl(_ sender: UISegmentedControl)
+    {
+        let index = segmentedControl.selectedSegmentIndex
+        defaults.set(index, forKey: "textColorSelected")
+        
+        if index == 0
+        {
+            textColor.
+        }
+
+    }
     
     @IBAction func updateBackgroundColor()
     {
@@ -77,16 +79,9 @@ class SettingsViewController: UIViewController
         defaults.set(greenSlider.value, forKey: "green")
         defaults.set(blueSlider.value, forKey: "blue")
         defaults.synchronize()
-        print("Set is being pressed")
+        
     }
-//    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // sends the chosen color to the background of the Home ViewController.
-//        if (segue.identifier == "home") {
-//            let newViewController = segue.destination
-//            newViewController.view.backgroundColor = colorSquare.backgroundColor
-//        }
-//    }
+
 
     
     //# TODO: - Add features

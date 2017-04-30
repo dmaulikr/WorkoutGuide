@@ -28,44 +28,35 @@ class MoreWorkoutsViewController: UIViewController
         
         self.title = "More Workouts"
         
+        moreWorkoutDict = appDelegate.getPlistDict(plistName: "MoreWorkouts") as! [String : [String]]
         
-        let path = Bundle.main.path(forResource: "MoreWorkouts", ofType: "plist")
+        let titleArrays = Array(moreWorkoutDict.keys)
         
-        if let validPath = path
+        let allView = view.subviews
+        
+        for i in 0..<allView.count
         {
-            let dict = NSDictionary(contentsOfFile: validPath)
-            
-            if let validDict = dict
+            if allView[i].tag == 10//is UIButton
             {
-                moreWorkoutDict = validDict as! [String : [String]]
+                let button = allView[i] as! UIButton
                 
-                let titleArrays = validDict.allKeys
+                button.setTitle(String(describing: titleArrays[i]), for: .normal)
+                button.backgroundColor = themeColor
+                button.setTitleColor(textColor, for: .normal)
+                button.titleLabel?.font = appFont
+                button.layer.borderColor = borderColor
+                button.layer.borderWidth = 3
+                button.layer.cornerRadius = 5
+                button.clipsToBounds = true
                 
-                let allView = view.subviews
+                button.addTarget(self, action: #selector(MoreWorkoutsViewController.goToDetails(sender:)), for: .touchUpInside)
                 
-                for i in 0..<allView.count
-                {
-                    if allView[i].tag == 10//is UIButton
-                    {
-                        let button = allView[i] as! UIButton
-                        
-                        button.setTitle(String(describing: titleArrays[i]), for: .normal)
-                        button.backgroundColor = themeColor
-                        button.setTitleColor(textColor, for: .normal)
-                        button.titleLabel?.font = appFont
-                        button.layer.borderColor = borderColor
-                        button.layer.borderWidth = 3
-                        button.layer.cornerRadius = 5
-                        button.clipsToBounds = true
-                        
-                        button.addTarget(self, action: #selector(MoreWorkoutsViewController.goToDetails(sender:)), for: .touchUpInside)
-                        
-                    }
-                }
             }
         }
-        
     }
+    
+    
+    
     func goToDetails(sender: UIButton)
     {
         if let title = sender.titleLabel?.text, let array = moreWorkoutDict[title]

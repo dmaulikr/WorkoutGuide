@@ -29,41 +29,33 @@ class WorkoutGuideViewController: UIViewController
         
         self.title = "Choose your workout"
         
-        let path = Bundle.main.path(forResource: "Workouts", ofType: "plist")
+        workoutDict = appDelegate.getPlistDict(plistName: "Workouts") as! [String : [String]]
         
-        if let validPath = path
+        let titleArrays = Array(workoutDict.keys)
+        
+        let allView = view.subviews
+        
+        for i in 0..<allView.count
         {
-            let dict = NSDictionary(contentsOfFile: validPath)
-            
-            if let validDict = dict
+            if allView[i].tag == 10
             {
-                workoutDict = validDict as! [String : [String]]
+                let button = allView[i] as! UIButton
                 
-                let titleArrays = validDict.allKeys
+                button.setTitle(String(describing: titleArrays[i]), for: .normal)
+                button.backgroundColor = themeColor
+                button.setTitleColor(textColor, for: .normal)
+                button.titleLabel?.font = appFont
+                button.layer.borderColor = borderColor
+                button.layer.borderWidth = 3
+                button.layer.cornerRadius = 5
+                button.clipsToBounds = true
                 
-                let allView = view.subviews
-                
-                for i in 0..<allView.count
-                {
-                    if allView[i].tag == 10
-                    {
-                        let button = allView[i] as! UIButton
-                        
-                        button.setTitle(String(describing: titleArrays[i]), for: .normal)
-                        button.backgroundColor = themeColor
-                        button.setTitleColor(textColor, for: .normal)
-                        button.titleLabel?.font = appFont
-                        button.layer.borderColor = borderColor
-                        button.layer.borderWidth = 3
-                        button.layer.cornerRadius = 5
-                        button.clipsToBounds = true
-                        
-                        button.addTarget(self, action: #selector(WorkoutGuideViewController.goToDetails(sender:)), for: .touchUpInside)
-                    }
-                }
+                button.addTarget(self, action: #selector(WorkoutGuideViewController.goToDetails(sender:)), for: .touchUpInside)
             }
         }
     }
+    
+    
     
     func goToDetails(sender: UIButton)
     {
